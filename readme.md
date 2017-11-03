@@ -8,4 +8,6 @@ This git contains lessons, best practices, projects, and other musings from my t
 
 ## Setting up a Data Science Rig
 
+[Initial Set-Up](https://github.com/ernestk-git/data-scientist-ish/tutorials/initial_setup.md)
+
 ## My First Kaggle
