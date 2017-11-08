@@ -8,3 +8,5 @@ def data_shrinker(df, verbose=False):
             df.iloc[:,i] = pd.to_numeric(df.iloc[:,i], downcast='float')
         elif 'int' in str(df.iloc[:,i].dtype):
              df.iloc[:,i] = pd.to_numeric(df.iloc[:,i], downcast='integer')
+
+    return df
