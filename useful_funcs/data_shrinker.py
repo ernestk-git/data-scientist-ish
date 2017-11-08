@@ -1,6 +1,6 @@
 # takes a pandas dataframe and shrinks to smallest datatype
 def data_shrinker(df, verbose=False):
-    num_cols = len(train_data.columns)
+    num_cols = len(df.columns)
     for i in range(num_cols):
         if verbose:
             print('Column: %s of %s' % (i, num_cols))
