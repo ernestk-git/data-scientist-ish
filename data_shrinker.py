@@ -1,3 +1,5 @@
+import pandas as pd 
+
 # takes a pandas dataframe and shrinks to smallest datatype
 def data_shrinker(df):
     num_cols = len(train_data.columns)
