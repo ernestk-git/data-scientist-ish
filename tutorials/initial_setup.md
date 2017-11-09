@@ -11,7 +11,7 @@ In retrospect, I wish I had sprung for at least 32 gigs of RAM.  The timings and
 
 The M.2 drive is nice for its speed, but it's not necessary (does not impact the speed of building models as much as your GPU/CPU and RAM).
 
-As for which GPU you should purchase, I recommend following (Time Dettmers)
+As for which GPU you should purchase, I recommend following (Time Dettmers)[http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/]
 
 ## Installing Ubuntu
 
