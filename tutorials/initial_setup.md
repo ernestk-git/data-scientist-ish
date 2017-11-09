@@ -22,4 +22,4 @@ In retrospect, I wish I had sprung for at least 32 gigs of RAM.  The timings and
 
 We use Anaconda2 in the program based on Python 2.7.  You should know that Python 2 is set to become depracated in 2019.  To switch between Python2 and 3, we use Conda environments.
 
-* Grab the
+* Grab the Anaconda package from:[https://www.anaconda.com/download/]
