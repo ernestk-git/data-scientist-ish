@@ -5,18 +5,7 @@ This guide will follow two paths:
 * You created a conda environment (env) with Jeremy Howard's fast.ai library and want to add XGBoost to it (or any other environment)
 * You want to install XGBoost in the default environment
 
-**NOTE: This guide assumes that the python libraries cuda80 and cudnn have already been installed**
-If they have not yet been installed:
-
-* For you conda env: 
-    * `conda install --name fastai cuda80 -c soumith`
-    * `conda install --name fastai cudnn`
-* For the default env:
-    * `conda install cuda80 -c soumith`
-    * `conda install cudnn`
-
-
-## Adding XGBoost to a Conda Environment w/ or w/o GPU Acceleration
+## Adding XGBoost to a Conda Environment
 
 While there is a pip package to install XGBoost, it has not been updated since 2016.  As such, we will be grabbing the repository off of github and compiling it ourselves.
 
