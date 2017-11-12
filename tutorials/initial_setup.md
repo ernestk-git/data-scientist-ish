@@ -15,11 +15,19 @@ As for which GPU you should purchase, I recommend following [Tom Dettmers](http:
 
 Basically, you'll benefit from having more RAM on the GPU and more processing power.  A GTX 1070, 1070TI, 1080 or 1080TI will server you well.  
 
+## Hey, I'm Using AWS
+
+That's great because this guide was tested on an AWS instance!  A couple of notes about AWS:
+
+* You'll find most of the GPU instances in the "Oregon" region.  Unfortunately, they're not immediately available and you will have to send a request for access.
+* P2 instances feature a K80 GPU (~5.5 - 8 TFlops of Floating Point 32-bit (FP-32) performance, 2x12 Gigs of Memory, The K80 is essentially two K20s on a single GPU with a wider range of clock speeds) [source](https://aws.amazon.com/ec2/instance-types/p2/)
+* P3 instances feature a V100 GPU (~15 TFlops @ FP-32, 120 TFlops @ FP-16, 16 Gigs of Memory).  Although CUDA supports the use of FP-16 operations, [PyTorch](https://github.com/pytorch/pytorch/issues/1539) (and many of the other major deep learning frameworks) do not yet.
+* Pricing can be found [here](https://aws.amazon.com/ec2/pricing/on-demand/)
+
+
 ## Installing Ubuntu
 
-* I installed Ubuntu 16.04.3 LTS Desktop (which uses kernel 4.10 by default, earlier versions had issues playing nicely with Ryzen) from:
-
-[Ubuntu](https://www.ubuntu.com/download/desktop)
+* I installed Ubuntu 16.04.3 LTS Desktop (which uses kernel 4.10 by default, earlier versions had issues playing nicely with Ryzen) from: <https://www.ubuntu.com/download/desktop>
 
 The LTS stands for Long Term Support, meaning that Canonical will continue to release updates for five years (Oct 2020).  It seems like many data scientists and tools are being developed on this particular breed of linux, but I've also had success with [Mint](https://linuxmint.com/).  However, this guide will assume that you're either on OS X or Ubuntu.  If you have no need for GUI Desktop, feel free to install Ubuntu Server (alternatively, you can push `CTRL + ALT + F1` to deactivate the GUI on Ubuntu Desktop).
 
@@ -36,7 +44,7 @@ Additionally, keep hardware drivers up-to-date, particularly your mainboard's BI
 
 In total I will be setting up and utilizing the following packages, software, or libraries:
 
-* [Python 2.7 and 3.6](python.md)
+* [Python 2.7 and 3.6]()
 * [R]()
 * [PySpark, Spark, Hadoop]()
 * Anaconda2 - Covered under the Python Installation Guide
