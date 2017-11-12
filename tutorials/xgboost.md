@@ -45,11 +45,32 @@ Now you may be asking: why did you go to the trouble of installing XGBoost to yo
 
 You will essentially follow the same steps as listed before.  However, after step 5, instead of evoking `sudo -s`, simply run:
 
-* `python setup.py install`
+6.a. `python setup.py install`
 
 # Installing XGBoost on MacOS X - no GPU Acceleration :(
 
-...under construction...
+The installation on Mac is not terribly different, but we'll go step-by-step:
+
+1. Follow the instructions and install Homebrew, if you haven't already: [Homebrew](https://brew.sh/)
+2. Install gcc: `brew install gcc`
+    * What's going on here is rather complicated, but basically, Apple uses its own C compiler called Clang.  By default, Apple also maps `gcc` to clang.  So to use the gcc compiler, we'll need to brew install it.  The current version of gcc is 7, a factoid we'll use next.
+3. Go to `~/xgboost` or wherever you cloned it: `cd ~/xgboost`
+4. We'll need to edit the config.mk file in the xgboost directory, use your favorite text editor or: `nano config.mk`
+5. Find the line `# choice of compiler, by default use system preference.` just below the intro crawl:
+    * uncomment (delete #) lines:
+        * export CC = gcc
+        * export CXX = g++
+    * edit these lines to:
+        * export CC = gcc-7
+        * export CXX = g++-7
+    * You can check your current version of gcc by running `brew install gcc` again...it should report back that it is already installed and the current version number (i.e. 'gcc 7.2.0 is already installed')
+6. `cp make/config.mk ./config.mk`
+7. `make -j4`
+8. cd python-package
+8.a. If you wish to install xgboost to a particular env (python 3 or fastai, for instance), activate it now: `source activate fastai`
+9. python setup.py install
+       
+Alternatively, you can brew install gcc5, but I like to have the latest version of things.
 
 # My First Gradient Boosted Tree!
 
