@@ -45,7 +45,7 @@ Now you may be asking: why did you go to the trouble of installing XGBoost to yo
 
 You will essentially follow the same steps as listed before.  However, after step 5, instead of evoking `sudo -s`, simply run:
 
-6.a. `python setup.py install`
+6a. `python setup.py install`
 
 # Installing XGBoost on MacOS X - no GPU Acceleration :(
 
@@ -66,8 +66,8 @@ The installation on Mac is not terribly different, but we'll go step-by-step:
     * You can check your current version of gcc by running `brew install gcc` again...it should report back that it is already installed and the current version number (i.e. 'gcc 7.2.0 is already installed')
 6. `cp make/config.mk ./config.mk`
 7. `make -j4`
-8. cd python-package
-8.a. If you wish to install xgboost to a particular env (python 3 or fastai, for instance), activate it now: `source activate fastai`
+8. `cd python-package`
+8a. If you wish to install xgboost to a particular env (python 3 or fastai, for instance), activate it now: `source activate fastai`
 9. python setup.py install
        
 Alternatively, you can brew install gcc5, but I like to have the latest version of things.
