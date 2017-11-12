@@ -15,7 +15,7 @@ While there is a pip package to install XGBoost, it has not been updated since 2
 
 Following the XGBoost [instructions](http://xgboost.readthedocs.io/en/latest/build.html), change directory to .../xgboost:
 
-4. `cd ~/xgboost` or whever it is located
+4. `cd ~/xgboost` or wherever it is located
 
 ### With GPU Acceleration
 
