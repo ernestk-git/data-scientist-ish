@@ -34,24 +34,45 @@ The LTS stands for Long Term Support, meaning that Canonical will continue to re
 * Via a USB Drive using this tool:
 [Tutorials for Windows, Mac, or Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows)
 
-## Good Computing Practices
+## Installing GPU Drivers and CUDA (Optional)
 
-After you install Ubuntu, make sure that you stay up-to-date with updates.  With command `sudo apt-get update`, you can update installed software without upgrading to newer versions (which may cause issues with dependencies).  If you do desire the newest software, `sudo apt-get upgrade` will perform this task while `sudo apt-get dist-upgrade` will attempt to deal with dependencies intelligently [source](https://askubuntu.com/questions/222348/what-does-sudo-apt-get-update-do). 
+### Install the Graphics Driver:
 
-Additionally, keep hardware drivers up-to-date, particularly your mainboard's BIOS and your router's firmware.  These can be found on the manufacturer's webpage (do not trust other sources unless you are using something like DD-WRT on your router).  Updates to my mainboard often lead to increased speed and stability while router updates are often crucial for security purposes.  
+If you will be using an NVIDIA graphics card to accelerate PyTorch and XGBoost, this section applies to you.
+
+To begin, we need to install the NVIDIA Graphics Driver.  Thankfully, a [team](https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa) handles the latest graphics updates for you on Ubuntu.  You have two options:
+
+* Add the repository: `sudo add-apt-repository ppa:graphics-drivers/ppa`
+* Grab their standalone [packages](https://packages.ubuntu.com/xenial/misc/) (version 384.90 was the latest at writing): sudo apt-get install nvidia-384
+
+### Install the CUDA Toolkit
+
+I'll be using CUDA 8.0 as PyTorch does not currently support 9.0.  Fortunately, NVIDIA maintains an [archive of previous CUDA builds](https://developer.nvidia.com/cuda-80-ga2-download-archive).  Simply select: `Linux` > `x86_64` > `Ubuntu` > `16.04` > `runfile`
+
+As of Oct 2017, you will be given instructions to download two files (~1.5 GB).  Simply follow the instructions in the terminal: `sudo sh FILENAME`
+
+Next, we will cover the software necessary for the MSAN program/base data science.
 
 ## Data Science Software
 
 In total I will be setting up and utilizing the following packages, software, or libraries:
 
-* [Python 2.7 and 3.6]()
-* [R]()
-* [PySpark, Spark, Hadoop]()
+* [Python 2.7 and 3.6](): Our Bread and Butter for Deep Learning
+* [R](): In our courses, utilized for statistics, regression and time series analysis
+* [PySpark, Spark, Hadoop](): Distributed computing stuff
 * Anaconda2 - Covered under the Python Installation Guide
 * Git
-* [PyTorch]()
-* [XGBoost](xgboost.md)
+* [PyTorch](): Deep Learning in Python
+* [XGBoost](xgboost.md): Gradient Boosted Trees, with or without GPU acceleration
 * Jeremy Howard's [FastAI Libraries](https://github.com/fastai/fastai)
+
+I primarily work in Jupyter Notebooks in an Anaconda Environment created by [Jeremy Howard](http://course.fast.ai/) for his Machine Learning and Deep Learning classes.  In addition to the fast.ai environment, we will install GPU-accelerated XGBoost and cuda80 for PyTorch.
+
+## Good Computing Practices
+
+After you install Ubuntu, make sure that you stay up-to-date with updates.  With command `sudo apt-get update`, you can update installed software without upgrading to newer versions (which may cause issues with dependencies).  If you do desire the newest software, `sudo apt-get upgrade` will perform this task while `sudo apt-get dist-upgrade` will attempt to deal with dependencies intelligently [source](https://askubuntu.com/questions/222348/what-does-sudo-apt-get-update-do). 
+
+Additionally, keep hardware drivers up-to-date, particularly your mainboard's BIOS and your router's firmware.  These can be found on the manufacturer's webpage (do not trust other sources unless you are using something like DD-WRT on your router).  Updates to my mainboard often lead to increased speed and stability while router updates are often crucial for security purposes.  
 
 ## Useful Stuff
 
