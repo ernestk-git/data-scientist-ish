@@ -8,6 +8,6 @@ This git contains lessons, best practices, projects, and other musings from my t
 
 ## Setting up a Data Science Rig
 
-[Initial Set-Up](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/initial_setup.md): Here you'll find descriptions and guides on setting up your own desktop box based on my own experiences.  I personally work on a MacBook (2017) with an SSH connection to my home PC for when I need the extra oomph.
+[Initial Set-Up](/tutorials/initial_setup.md): Here you'll find descriptions and guides on setting up your own desktop box based on my own experiences.  I personally work on a MacBook (2017) with an SSH connection to my home PC for when I need the extra oomph.
 
 ## My First Kaggle
