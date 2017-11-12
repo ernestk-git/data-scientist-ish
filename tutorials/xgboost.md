@@ -67,8 +67,8 @@ The installation on Mac is not terribly different, but we'll go step-by-step:
 6. `cp make/config.mk ./config.mk`
 7. `make -j4`
 8. `cd python-package`
-8a. If you wish to install xgboost to a particular env (python 3 or fastai, for instance), activate it now: `source activate fastai`
-9. python setup.py install
+9. (Optional) If you wish to install xgboost to a particular env (python 3 or fastai, for instance), activate it now: `source activate fastai`
+10. python setup.py install
        
 Alternatively, you can brew install gcc5, but I like to have the latest version of things.
 
