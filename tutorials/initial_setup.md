@@ -1,3 +1,7 @@
+---
+redirect_from: "/readme.md"
+---
+
 # Initial Rig Set-Up
 
 I built a semi-powerful machine in preparation for the program with the following specs:
