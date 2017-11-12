@@ -45,7 +45,7 @@ Now you may be asking: why did you go to the trouble of installing XGBoost to yo
 
 You will essentially follow the same steps as listed before.  However, after step 5, instead of evoking `sudo -s`, simply run:
 
-6a. `python setup.py install`
+6a. `sudo python setup.py install`
 
 # Installing XGBoost on MacOS X - no GPU Acceleration :(
 
@@ -67,8 +67,16 @@ The installation on Mac is not terribly different, but we'll go step-by-step:
 6. `cp make/config.mk ./config.mk`
 7. `make -j4`
 8. `cd python-package`
-9. (Optional) If you wish to install xgboost to a particular env (python 3 or fastai, for instance), activate it now: `source activate fastai`
-10. python setup.py install
+
+## Installing XGBoost to a Conda Env on MacOS X
+
+9.  If you wish to install xgboost to a particular env (python 3 or fastai, for instance), we will need the sudo shell trick as above: `sudo -s`
+10. `source activate fastai` or your conda env
+11. `python setup.py install`
+
+## Installing XGBoost to the Default Env on MacOS X
+
+9. sudo python setup.py install
        
 Alternatively, you can brew install gcc5, but I like to have the latest version of things.
 
