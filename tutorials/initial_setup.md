@@ -36,19 +36,19 @@ Additionally, keep hardware drivers up-to-date, particularly your mainboard's BI
 
 In total I will be setting up and utilizing the following packages, software, or libraries:
 
-* [Python 2.7 and 3.6](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/python.md)
-* [R](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
-* [PySpark, Spark, Hadoop](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
+* [Python 2.7 and 3.6](python.md)
+* [R]()
+* [PySpark, Spark, Hadoop]()
 * Anaconda2 - Covered under the Python Installation Guide
 * Git
-* [PyTorch](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
-* [XGBoost](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/xgboost.md)
+* [PyTorch]()
+* [XGBoost](xgboost.md)
 * Jeremy Howard's [FastAI Libraries](https://github.com/fastai/fastai)
 
 ## Useful Stuff
 
-* [How I use my home computer from my laptop with SSH and tmux](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
-* [SSH FTP for convenient file transfers](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
-* [Handy Terminal Commands](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
-* [Psst, they're spying on you, VPN stuff](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
-* [Useful Network Security Considerations](https://github.com/ernestk-git/data-scientist-ish/blob/master/tutorials/)
+* [How I use my home computer from my laptop with SSH and tmux]()
+* [SSH FTP for convenient file transfers]()
+* [Handy Terminal Commands]()
+* [Psst, they're spying on you, VPN stuff]()
+* [Useful Network Security Considerations]()
