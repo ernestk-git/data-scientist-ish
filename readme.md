@@ -6,4 +6,4 @@ Most of the students come from the sciences: computer science, math, engineering
 
 This git contains lessons, best practices, projects, and other musings from my time at MSAN.  So let's begin:
 
-[THE WIKI](./wiki)
+[THE WIKI](../../wiki)
