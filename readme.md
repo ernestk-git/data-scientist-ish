@@ -6,8 +6,4 @@ Most of the students come from the sciences: computer science, math, engineering
 
 This git contains lessons, best practices, projects, and other musings from my time at MSAN.  So let's begin:
 
-## Setting up a Data Science Rig
-
-[Initial Set-Up](/tutorials/initial_setup.md): Here you'll find descriptions and guides on setting up your own desktop box based on my own experiences.  I personally work on a MacBook (2017) with an SSH connection to my home PC for when I need the extra oomph.
-
-## My First Kaggle
+[THE WIKI](./wiki)
