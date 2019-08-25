@@ -6,6 +6,6 @@ From the [HoloViews](http://holoviews.org/) website:
 HoloViews is supported by Anaconda and plays well with the PyViz family of libraries. Personally, I think it's easier to use than the alternatives and lets a data scientist do nearly anything they need to.
 
 This directory contains several examples, as notebooks or stand-alone apps, for:
-* Basic Plotting
+* [Basic Plotting](https://github.com/ernestk-git/data-scientist-ish/blob/master/data_viz/Panel_Plotting.ipynb)
 * Interactivity
 * Streaming
